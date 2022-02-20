@@ -1428,7 +1428,7 @@ input.form__button {
 }
 .entrance__form .input-global {
   line-height: 24px;
-  padding: 13px clamp(7px, 1vw, 17px) 12px;
+  padding: 13px 15px 12px;
   border-radius: 6px;
   border: var(--main-border);
   color: var(--main-dark-blue-color);
@@ -2027,6 +2027,9 @@ input.form__button {
 .post__actions-dislike {
   margin-right: auto;
 }
+.post__actions-comment {
+  margin-left: 5px;
+}
 .post__ratings, .post__reactions {
   display: flex;
   align-items: center;
@@ -2147,7 +2150,6 @@ input.form__button {
   cursor: pointer;
   position: relative;
   display: flex;
-  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
