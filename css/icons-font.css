@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'icons-font';
+  src: url('../fonts/icons-font/icons-font.eot?nob7jm');
+  src: url('../fonts/icons-font/icons-font.eot?nob7jm#iefix') format('embedded-opentype'),
+    url('../fonts/icons-font/icons-font.ttf?nob7jm') format('truetype'),
+    url('../fonts/icons-font/icons-font.woff?nob7jm') format('woff'),
+    url('../fonts/icons-font/icons-font.svg?nob7jm#icons-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="--ic-"]::before,
+[class*=" --ic-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons-font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.--ic-edit-icon:before {
+  content: "\e94a";
+}
+
+.--ic-delete-icon:before {
+  content: "\e94b";
+}
+
+.--ic-alert-danger:before {
+  content: "\e944";
+}
+
+.--ic-alert-info:before {
+  content: "\e945";
+}
+
+.--ic-alert-primary:before {
+  content: "\e946";
+}
+
+.--ic-alert-warning:before {
+  content: "\e947";
+}
+
+.--ic-alert-check:before {
+  content: "\e948";
+}
+
+.--ic-refresh-icon:before {
+  content: "\e949";
+}
+
+.--ic-popup-close:before {
+  content: "\e942";
+}
+
+.--ic-suitcase-icon-converted:before {
+  content: "\e943";
+}
+
+.--ic-pagination-angle-right:before {
+  content: "\e900";
+}
+
+.--ic-notifications-icon:before {
+  content: "\e901";
+}
+
+.--ic-fullscreen-icon:before {
+  content: "\e902";
+}
+
+.--ic-angle-down-gray:before {
+  content: "\e903";
+}
+
+.--ic-apps-icon:before {
+  content: "\e904";
+}
+
+.--ic-play-icon:before {
+  content: "\e905";
+}
+
+.--ic-date-icon:before {
+  content: "\e906";
+}
+
+.--ic-clock-icon:before {
+  content: "\e907";
+}
+
+.--ic-reject-icon-converted:before {
+  content: "\e908";
+}
+
+.--ic-chec-icon:before {
+  content: "\e909";
+}
+
+.--ic-remove-friend-icon:before {
+  content: "\e90a";
+}
+
+.--ic-log-out-icon-black:before {
+  content: "\e90b";
+}
+
+.--ic-help-icon-black:before {
+  content: "\e90c";
+}
+
+.--ic-replies-icon:before {
+  content: "\e90d";
+}
+
+.--ic-settings-icon:before {
+  content: "\e90e";
+}
+
+.--ic-publications-icon:before {
+  content: "\e90f";
+}
+
+.--ic-post-it-icon:before {
+  content: "\e910";
+}
+
+.--ic-message-user-icon:before {
+  content: "\e911";
+}
+
+.--ic-add-friend-icon:before {
+  content: "\e912";
+}
+
+.--ic-users-search-icon:before {
+  content: "\e913";
+}
+
+.--ic-plus-icon:before {
+  content: "\e914";
+}
+
+.--ic-smile-icon:before {
+  content: "\e915";
+}
+
+.--ic-file-upload-icon:before {
+  content: "\e916";
+}
+
+.--ic-share-icon:before {
+  content: "\e917";
+}
+
+.--ic-save-icon:before {
+  content: "\e918";
+}
+
+.--ic-comment-icon:before {
+  content: "\e919";
+}
+
+.--ic-like-icon:before {
+  content: "\e91a";
+}
+
+.--ic-dislike-icon:before {
+  content: "\e91b";
+}
+
+.--ic-new-story-icon:before {
+  content: "\e91c";
+}
+
+.--ic-new-post-icon:before {
+  content: "\e91d";
+}
+
+.--ic-new-photo-icon:before {
+  content: "\e91e";
+}
+
+.--ic-rounded-angle-right:before {
+  content: "\e91f";
+}
+
+.--ic-sidebar-calendar:before {
+  content: "\e920";
+}
+
+.--ic-sidebar-base-ui:before {
+  content: "\e921";
+}
+
+.--ic-sidebar-charts:before {
+  content: "\e922";
+}
+
+.--ic-sidebar-chat:before {
+  content: "\e923";
+}
+
+.--ic-sidebar-companies:before {
+  content: "\e924";
+}
+
+.--ic-sidebar-contacts:before {
+  content: "\e925";
+}
+
+.--ic-sidebar-crm:before {
+  content: "\e926";
+}
+
+.--ic-sidebar-dashboard:before {
+  content: "\e927";
+}
+
+.--ic-sidebar-ecommerce:before {
+  content: "\e928";
+}
+
+.--ic-sidebar-email:before {
+  content: "\e929";
+}
+
+.--ic-sidebar-extended:before {
+  content: "\e92a";
+}
+
+.--ic-sidebar-extra-pages:before {
+  content: "\e92b";
+}
+
+.--ic-sidebar-feed:before {
+  content: "\e92c";
+}
+
+.--ic-sidebar-file-manager:before {
+  content: "\e92d";
+}
+
+.--ic-sidebar-forms:before {
+  content: "\e92e";
+}
+
+.--ic-sidebar-icons:before {
+  content: "\e92f";
+}
+
+.--ic-sidebar-layouts:before {
+  content: "\e930";
+}
+
+.--ic-sidebar-maps:before {
+  content: "\e931";
+}
+
+.--ic-sidebar-multi-level:before {
+  content: "\e932";
+}
+
+.--ic-sidebar-pages:before {
+  content: "\e933";
+}
+
+.--ic-sidebar-projects:before {
+  content: "\e934";
+}
+
+.--ic-sidebar-tables:before {
+  content: "\e935";
+}
+
+.--ic-sidebar-tasks:before {
+  content: "\e936";
+}
+
+.--ic-sidebar-tickets:before {
+  content: "\e937";
+}
+
+.--ic-sidebar-widgets:before {
+  content: "\e938";
+}
+
+.--ic-settings-icon-black:before {
+  content: "\e939";
+}
+
+.--ic-twitter-monocolor-icon:before {
+  content: "\e93a";
+}
+
+.--ic-instagram-monocolor-icon:before {
+  content: "\e93b";
+}
+
+.--ic-google-monocolor-icon:before {
+  content: "\e93c";
+}
+
+.--ic-facebook-monocolor-icon:before {
+  content: "\e93d";
+}
+
+.--ic-settings-page-icon:before {
+  content: "\e93e";
+}
+
+.--ic-password-eye:before {
+  content: "\e93f";
+}
+
+.--ic-not-visible:before {
+  content: "\e940";
+}
+
+.--ic-visible:before {
+  content: "\e941";
+}

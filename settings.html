@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html amp lang="en"
+	[class]="[menu_class,search_class,login_class,registration_class, notifications_class, messages_class]">
+
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Keskilya.com</title>
+	<meta name="keywords" content="HTML5 Template">
+	<meta name="description" content="Responsive HTML5 Template">
+
+	<!-- AMP -->
+	<link rel="canonical" href="#">
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+	<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+	</style>
+	<noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+
+	<!-- AMP Styles -->
+	<style amp-custom>
+		@import url("./css/style.css");
+		@import url("./css/icons-font.css");
+	</style>
+
+</head>
+
+<body>
+	<div class="top-page" id="top-page"></div>
+
+	<div class="site-wrap">
+		<!-- Header -->
+<header class="header" id="main-header">
+	<div class="header-inner">
+
+		<div class="logo-block">
+			<a href="./" class="logo logo--header"></a>
+		</div>
+
+		<!-- Main search -->
+		<div class="header-action header-action--search" on="tap:AMP.setState({ search_class: 'search--is-shown' })">
+			<i class="--ic-users-search-icon"></i>
+		</div>
+
+		<!-- Main notifications -->
+		<div class="header-action header-action--notification "
+			on="tap:AMP.setState({ notifications_class: notifications_class ? '' : 'notifications--is-shown', menu_class: '', messages_class: '' })">
+			<i class="--ic-notifications-icon"></i>
+			<div class="header__notifications-counter">2</div>
+		</div>
+
+		<!-- Main messages -->
+		<div class="header-action header-action--message"
+			on="tap:AMP.setState({ messages_class: messages_class ? '' : 'messages--is-shown', menu_class: '', notifications_class: '' })">
+			<i class="--ic-message-user-icon"></i>
+		</div>
+
+		<!-- Main userbox -->
+		<a class="avatar avatar--sm" href="my-profile.html">
+			<img src="img/users/main-user.webp" alt="User avatar">
+		</a>
+
+		<!-- Main menu -->
+		<div class="header-action">
+			<button class="header-tools--menu"
+				on="tap:AMP.setState({ menu_class: menu_class ? '' : 'menu--is-shown', notifications_class: '', messages_class: '' })"></button>
+		</div>
+
+	</div>
+</header>
+
+		<!-- Settings -->
+		<div class="settings page-box">
+			<div class="settings__inner global-box">
+				<div class="settings__top">
+					<h3 class="box-title">Settings</h3>
+				</div>
+				<form action="#" class="settings__form">
+					<label>
+						Name
+						<input class="global-input" type="text" placeholder="Roman Polyarush">
+					</label>
+					<label>
+						Password
+						<input class="global-input" type="password" placeholder="Updated 5 years ago">
+					</label>
+					<label>
+						Email
+						<input class="global-input" type="text" placeholder="webvisonss@gmail.com">
+					</label>
+					<label>
+						Phone number
+						<input class="global-input" type="text" placeholder="+380632644573">
+					</label>
+					<label>
+						Language
+						<input class="global-input" type="text" placeholder="Francias">
+					</label>
+					<input class="settings__form-btn" type="submit" value="Save Settings">
+				</form>
+			</div>
+		</div>
+
+	</div><!-- .site-wrap -->
+
+	<!-- To top button -->
+<button class="to-top" on="tap:top-page.scrollTo(duration=500)"></button>
+<!-- Main Menu -->
+<nav class="main-menu global-popup">
+	<div class="main-menu-inner global-popup__inner">
+
+		<!-- Main menu user -->
+		<div class="main-menu__user global-box">
+
+			<!-- User box -->
+			<div class="user__box">
+				<div class="avatar avatar--md">
+					<amp-img layout="fill" src="img/users/main-user.webp" alt="User avatar"></amp-img>
+				</div>
+				<div class="user__name">
+					Roman Polyarysh
+					<span class="user__nickname">
+						@polyarush
+					</span>
+				</div>
+			</div>
+
+			<!-- User actions -->
+			<div class="main-menu__user-actions">
+
+				<div class="action-dots__wrap">
+					<div class="action-dots">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="action-dots__popup popup-triangle">
+						<div class="action-dots__popup-buttons">
+							<a href="#">Action</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="main-menu__user-settings">
+					<a href="settings.html">
+						<i class="--ic-settings-icon"></i>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Main menu list -->
+		<div class="main-menu__list global-box">
+			<ul>
+				<li>
+					<a href="#">Actu Senegal</a>
+				</li>
+				<li>
+					<a href="#">Actu CEDEAO</a>
+					<div class="notification-count">
+						7
+					</div>
+				</li>
+				<li>
+					<a href="#">Actu Afrique</a>
+				</li>
+				<li>
+					<a href="#">Actu Maghreb</a>
+				</li>
+				<li>
+					<a href="#">Actu France</a>
+				</li>
+				<li>
+					<a href="#">Actu Etata Unis</a>
+				</li>
+				<li>
+					<a href="#">Actu Chine</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Liked pages -->
+		<div class="main-menu__pages-liked global-box">
+			<h3 class="box-title">Pages You Like</h3>
+			<ul class="liked-pages">
+				<li>
+					<a href="#">
+						<div class="liked-pages__page-image">
+							<amp-img layout="fill" src="img/liked-pages/1.webp" alt="Liverpool FC"></amp-img>
+						</div>
+						<div class="liked-pages__page-name">Liverpool FC</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="liked-pages__page-image">
+							<amp-img layout="fill" src="img/liked-pages/2.webp" alt="Liverpool FC"></amp-img>
+						</div>
+						<div class="liked-pages__page-name">UI&amp;UX Design</div>
+						<div class="notification-count">5</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="liked-pages__page-image">
+							<amp-img layout="fill" src="img/liked-pages/3.webp" alt="Liverpool FC"></amp-img>
+						</div>
+						<div class="liked-pages__page-name">Reartburo</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Events -->
+		<div class="events global-box">
+			<div class="events__top global-box__top">
+				<h3 class="box-title">Events</h3>
+			</div>
+			<div class="events__content is-empty">
+				<div class="events__content-plug">
+					<div class="events__content-img">
+						<amp-img layout="fill" src="img/icons/events-icon.svg" alt="Event icon"></amp-img>
+					</div>
+					<a href="#">
+						The list is empty, <span>find an event</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</nav>
+<!-- Main notifications -->
+<div class="main-notifications global-popup">
+	<div class="main-notifications__inner global-popup__inner">
+		<div class="global-box">
+			<h3 class="box-title">
+				Notifications
+			</h3>
+			<ul class="main-notifications__list ">
+				<li>
+					<a href="#">
+						<div class="avatar avatar--md">
+							<amp-img src="img/users/main-user.webp" alt="User avatar" layout="fill"></amp-img>
+						</div>
+						<div class="main-notifications__info">
+							<div class="main-notifications__username">
+								Robert King
+							</div>
+							<p class="main-notifications__text">
+								Lana Wood says that the Hollywood stars' meeting at the
+								Lana Wood says that the Hollywood stars' meeting at the
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="avatar avatar--md">
+							<amp-img src="img/users/1.webp" alt="User avatar" layout="fill"></amp-img>
+						</div>
+						<div class="main-notifications__info">
+							<div class="main-notifications__username">
+								Amanda Dowson
+							</div>
+							<p class="main-notifications__text">
+								Lana Wood says that the Hollywood stars' meeting at the
+								Lana Wood says that the Hollywood stars' meeting at the
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="avatar avatar--md">
+							<amp-img src="img/users/main-user.webp" alt="User avatar" layout="fill"></amp-img>
+						</div>
+						<div class="main-notifications__info">
+							<div class="main-notifications__username">
+								Robert King
+							</div>
+							<p class="main-notifications__text">
+								Lana Wood says that the Hollywood stars' meeting at the
+								Lana Wood says that the Hollywood stars' meeting at the
+							</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Main messages -->
+<div class="main-messages global-popup">
+	<div class="main-messages__inner global-popup__inner">
+		<div class="global-box">
+			<div class="main-messages__top">
+				<h3 class="box-title">Messages</h3>
+				<a href="#">
+					<i class="--ic-new-post-icon"></i>
+				</a>
+			</div>
+			<ul class="main-messages__list">
+				<li>
+					<a class="user__box online-status is-offline" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/3.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Amanda Dowson
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-online" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/1.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Robert King
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-count">7</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-offline" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/3.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Amanda Dowson
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-offline" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/1.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Pedro Gonçalves
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-online" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/2.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Amanda Dowson
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-online" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/4.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Marcin Dobrozek
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Header Search -->
+<div class="header-search-wrap">
+	<button class="search-button--close" on="tap:AMP.setState({ search_class: '' })"></button>
+	<div class="header-search-inner">
+		<form action-xhr="//" id="search_form" method="post">
+			<input type="text" name="s" placeholder="Search" />
+			<input type="submit" value="" />
+		</form>
+	</div>
+	<div class="header-search-overlay"></div>
+</div>
+
+<div class="all-overlay"></div>
+</body>
+
+</html>

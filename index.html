@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html amp lang="en"
+	[class]="[menu_class,search_class,login_class,registration_class, notifications_class, messages_class]">
+
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Keskilya.com</title>
+	<meta name="keywords" content="HTML5 Template">
+	<meta name="description" content="Responsive HTML5 Template">
+
+	<!-- AMP -->
+	<link rel="canonical" href="#">
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+	<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+	<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+	<script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+	</style>
+	<noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+
+	<!-- AMP Styles -->
+	<style amp-custom>
+		@import url("./css/icons-font.css");
+		@import url("./css/style.css");
+	</style>
+
+</head>
+
+<body>
+	<div class="top-page" id="top-page"></div>
+
+	<div class="site-wrap">
+		<!-- Header -->
+<header class="header" id="main-header">
+	<div class="header-inner">
+
+		<div class="logo-block">
+			<a href="./" class="logo logo--header"></a>
+		</div>
+
+		<!-- Main search -->
+		<div class="header-action header-action--search" on="tap:AMP.setState({ search_class: 'search--is-shown' })">
+			<i class="--ic-users-search-icon"></i>
+		</div>
+
+		<!-- Main notifications -->
+		<div class="header-action header-action--notification "
+			on="tap:AMP.setState({ notifications_class: notifications_class ? '' : 'notifications--is-shown', menu_class: '', messages_class: '' })">
+			<i class="--ic-notifications-icon"></i>
+			<div class="header__notifications-counter">2</div>
+		</div>
+
+		<!-- Main messages -->
+		<div class="header-action header-action--message"
+			on="tap:AMP.setState({ messages_class: messages_class ? '' : 'messages--is-shown', menu_class: '', notifications_class: '' })">
+			<i class="--ic-message-user-icon"></i>
+		</div>
+
+		<!-- Main userbox -->
+		<a class="avatar avatar--sm" href="my-profile.html">
+			<img src="img/users/main-user.webp" alt="User avatar">
+		</a>
+
+		<!-- Main menu -->
+		<div class="header-action">
+			<button class="header-tools--menu"
+				on="tap:AMP.setState({ menu_class: menu_class ? '' : 'menu--is-shown', notifications_class: '', messages_class: '' })"></button>
+		</div>
+
+	</div>
+</header>
+
+		<!-- Main -->
+		<main class="main page-box flex-c">
+
+			<!-- New post -->
+			<div class="new-post global-box">
+				<div class="new-post__form flex-c">
+					<textarea placeholder="Whats new, Roman?"></textarea>
+					<div class="new-post__buttons">
+						<label class="file-upload">
+							<i class="--ic-file-upload-icon"></i>
+							<input type="file" multiple>
+						</label>
+						<input type="submit" value="Post it">
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Stories -->
+			<div class="stories global-box">
+				<h3 class="box-title">
+					History
+				</h3>
+				<div class="stories__inner">
+					<ul class="stories__list">
+						<li>
+							<a class="stories__item" href="#">
+								<div class="stories__item-bg">
+									<amp-img layout="fill" src="img/stories/user-avatar/1.webp" alt="User photo">
+									</amp-img>
+								</div>
+								<div class="stories__item-new"></div>
+								<span class="stories__item-name">Add history</span>
+							</a>
+						</li>
+						<li>
+							<a class="stories__item" href="#">
+								<div class="stories__item-bg">
+									<amp-img layout="fill" src="img/stories/3.webp" alt="Story photo"></amp-img>
+								</div>
+								<div class="stories__item-avatar">
+									<amp-img layout="fill" src="img/users/1.webp" alt="User photo"></amp-img>
+								</div>
+								<span class="stories__item-name">Sébastien Hemington</span>
+							</a>
+						</li>
+						<li>
+							<a class="stories__item" href="#">
+								<div class="stories__item-bg">
+									<amp-img layout="fill" src="img/stories/2.webp" alt="Story photo">
+								</div>
+								<div class="stories__item-avatar">
+									<amp-img layout="fill" src="img/users/7.webp" alt="User photo"></amp-img>
+								</div>
+								<span class="stories__item-name">Yachtex</span>
+							</a>
+						</li>
+						<li>
+							<a class="stories__item" href="#">
+								<div class="stories__item-bg">
+									<amp-img layout="fill" src="img/stories/1.webp" alt="Story photo">
+								</div>
+								<div class="stories__item-avatar">
+									<amp-img layout="fill" src="img/users/5.webp" alt="User photo"></amp-img>
+								</div>
+								<span class="stories__item-name">Piter Parker</span>
+							</a>
+						</li>
+						<li>
+							<a class="stories__item" href="#">
+								<div class="stories__item-bg">
+									<amp-img layout="fill" src="img/stories/2.webp" alt="Story photo">
+								</div>
+								<div class="stories__item-avatar">
+									<amp-img layout="fill" src="img/users/1.webp" alt="User photo"></amp-img>
+								</div>
+								<span class="stories__item-name">John Smith</span>
+							</a>
+						</li>
+						<li>
+							<a class="stories__item" href="#">
+								<div class="stories__item-bg">
+									<amp-img layout="fill" src="img/stories/4.webp" alt="Story photo">
+								</div>
+								<div class="stories__item-avatar">
+									<amp-img layout="fill" src="img/users/8.webp" alt="User photo"></amp-img>
+								</div>
+								<span class="stories__item-name">Samanta Wilson</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<ul class="post__list">
+
+				<!-- Big picture post -->
+				<li class="post global-box">
+					<div class="post__header">
+						<div class="post__header-person">
+							<a class="user__box post__header-user" href="#">
+								<div class="user__avatar">
+									<div class="user__avatar-img">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+								<div class="user__name">
+									<span>Robert King</span>
+									<div class="time-box">
+										<span class="time-box__count time-box__count-dotted">2</span> hours
+										ago
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="action-dots__wrap">
+							<div class="action-dots action-dots--bordered">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="action-dots__popup action-dots__popup--post popup-triangle">
+								<div class="action-dots__popup-buttons">
+									<a href="#">Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="post__title">
+						The workers keeping their
+					</h2>
+					<div class="post__image post__image-large">
+						<amp-img layout="fill" src="img/posts/1.webp" alt="Post image"></amp-img>
+					</div>
+					<div class="post__text">
+						Lana Wood says that the Hollywood stars' meeting at the famed Chateau Marmont hotel
+						had
+						been arranged by her mother,
+						Maria Zakharenko, who hoped Mr Douglas could help open doors.
+					</div>
+					<div class="post__actions">
+						<div class="post__actions-top">
+							<div class="post__ratings">
+								<div class="post__ratings-likes">
+									<span class="likes-count">55</span>
+									<span>likes</span>
+								</div>
+								<div class="post__ratings-dislikes">
+									<span class="dislikes-count">15</span>
+									<span>dislikes</span>
+								</div>
+							</div>
+							<a class="post__actions-save post__actions-button" href="#">
+								<i class="--ic-save-icon"></i>
+							</a>
+						</div>
+						<div class="post__actions-bottom">
+							<div class="post__actions-buttons">
+								<div class="post__actions-like post__actions-button">
+									<i class="--ic-like-icon"></i>
+									Like It
+								</div>
+								<div class="post__actions-dislike post__actions-button">
+									<i class="--ic-dislike-icon"></i>
+									Dislike
+								</div>
+								<div class="post__actions-comment post__actions-button">
+									<i class="--ic-comment-icon"></i>
+									Comment
+								</div>
+							</div>
+							<div class="post__actions-right">
+								<a class="post__actions-share post__actions-button" href="#">
+									<i class="--ic-share-icon"></i>
+									Share
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="comment-input">
+						<div class="comment-input__inner">
+							<div class="user__box online-status is-online">
+								<div class="user__avatar">
+									<div class="user__avatar-img white-bg">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+							</div>
+							<div class="comment-input__form">
+								<form action="#">
+									<input type="text" placeholder="Write your comment...">
+									<label class="file-upload">
+										<i class="--ic-file-upload-icon"></i>
+										<input type="file" multiple>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<!-- Grid view post -->
+				<li class="post post--grid-view global-box">
+					<div class="post__header">
+						<div class="post__header-person">
+							<a class="user__box post__header-user" href="#">
+								<div class="user__avatar">
+									<div class="user__avatar-img">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+								<div class="user__name">
+									<span>Robert King</span>
+									<div class="time-box">
+										<span class="time-box__count time-box__count-dotted">2</span> hours
+										ago
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="action-dots__wrap">
+							<div class="action-dots action-dots--bordered">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="action-dots__popup action-dots__popup--post popup-triangle">
+								<div class="action-dots__popup-buttons">
+									<a href="#">Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="post__title">
+						The workers keeping their
+					</h2>
+					<div class="post__image">
+						<div class="post__image-md">
+							<amp-img src="img/posts/8.webp" alt="Post image" layout="fill"></amp-img>
+						</div>
+						<div class="post__image-sm">
+							<div>
+								<amp-img src="img/posts/9.webp" alt="Post image" layout="fill">
+								</amp-img>
+							</div>
+							<div>
+								<amp-img src="img/posts/10.webp" alt="Post image" layout="fill">
+								</amp-img>
+							</div>
+						</div>
+					</div>
+					<div class="post__text">
+						Lana Wood says that the Hollywood stars' meeting at the famed Chateau Marmont hotel
+						had
+						been arranged by her mother,
+						Maria Zakharenko, who hoped Mr Douglas could help open doors.
+					</div>
+					<div class="post__actions">
+						<div class="post__actions-top">
+							<div class="post__ratings">
+								<div class="post__ratings-likes">
+									<span class="likes-count">55</span>
+									<span>likes</span>
+								</div>
+								<div class="post__ratings-dislikes">
+									<span class="dislikes-count">15</span>
+									<span>dislikes</span>
+								</div>
+							</div>
+							<a class="post__actions-save post__actions-button" href="#">
+								<i class="--ic-save-icon"></i>
+							</a>
+						</div>
+						<div class="post__actions-bottom">
+							<div class="post__actions-buttons">
+								<div class="post__actions-like post__actions-button">
+									<i class="--ic-like-icon"></i>
+									Like It
+								</div>
+								<div class="post__actions-dislike post__actions-button">
+									<i class="--ic-dislike-icon"></i>
+									Dislike
+								</div>
+								<div class="post__actions-comment post__actions-button">
+									<i class="--ic-comment-icon"></i>
+									Comment
+								</div>
+							</div>
+							<div class="post__actions-right">
+								<a class="post__actions-share post__actions-button" href="#">
+									<i class="--ic-share-icon"></i>
+									Share
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="comment-input">
+						<div class="comment-input__inner">
+							<div class="user__box online-status is-online">
+								<div class="user__avatar">
+									<div class="user__avatar-img white-bg">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+							</div>
+							<div class="comment-input__form">
+								<form action="#">
+									<input type="text" placeholder="Write your comment...">
+									<label class="file-upload">
+										<i class="--ic-file-upload-icon"></i>
+										<input type="file" multiple>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<!-- Vertical view post -->
+				<li class="post post--vertical-view global-box">
+					<div class="post__header">
+						<div class="post__header-person">
+							<a class="user__box post__header-user" href="#">
+								<div class="user__avatar">
+									<div class="user__avatar-img">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+								<div class="user__name">
+									<span>Robert King</span>
+									<div class="time-box">
+										<span class="time-box__count time-box__count-dotted">2</span> hours
+										ago
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="action-dots__wrap">
+							<div class="action-dots action-dots--bordered">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="action-dots__popup action-dots__popup--post popup-triangle">
+								<div class="action-dots__popup-buttons">
+									<a href="#">Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="post__title">
+						The workers keeping their
+					</h2>
+					<div class="post__vertical-content">
+						<ul class="flex-c">
+							<li>
+								<a class="post__vertical-item" href="#">
+									<div class="post__vertical-file">
+										<amp-img layout="fill" src="img/posts/5.webp" alt="Post image">
+									</div>
+									</amp-img>
+									<div class="post__vertical-text">
+										<h4 class="content-title">
+											The workers keeping their disabilities secret
+										</h4>
+										<p>
+											Lana Wood says that the Hollywood stars' meeting at the famed
+											Chateau Marmont hotel had been arranged by.
+										</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="post__vertical-item" href="#">
+									<div class="post__vertical-file">
+										<amp-img layout="fill" src="img/posts/6.webp" alt="Post image"></amp-img>
+									</div>
+									<div class="post__vertical-text">
+										<h4 class="content-title">
+											Where it's forbidden to serve meat
+										</h4>
+										<p>
+											Every day, as the sound of ringing temple bells echo overhead,
+											tens of thousands of devotees descend the city's 88
+											stone.
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="post__actions">
+						<div class="post__actions-top">
+							<div class="post__ratings">
+								<div class="post__ratings-likes">
+									<span class="likes-count">55</span>
+									<span>likes</span>
+								</div>
+								<div class="post__ratings-dislikes">
+									<span class="dislikes-count">15</span>
+									<span>dislikes</span>
+								</div>
+							</div>
+							<a class="post__actions-save post__actions-button" href="#">
+								<i class="--ic-save-icon"></i>
+							</a>
+						</div>
+						<div class="post__actions-bottom">
+							<div class="post__actions-buttons">
+								<div class="post__actions-like post__actions-button">
+									<i class="--ic-like-icon"></i>
+									Like It
+								</div>
+								<div class="post__actions-dislike post__actions-button">
+									<i class="--ic-dislike-icon"></i>
+									Dislike
+								</div>
+								<div class="post__actions-comment post__actions-button">
+									<i class="--ic-comment-icon"></i>
+									Comment
+								</div>
+							</div>
+							<div class="post__actions-right">
+								<a class="post__actions-share post__actions-button" href="#">
+									<i class="--ic-share-icon"></i>
+									Share
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="comment-input">
+						<div class="comment-input__inner">
+							<div class="user__box online-status is-online">
+								<div class="user__avatar">
+									<div class="user__avatar-img white-bg">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+							</div>
+							<div class="comment-input__form">
+								<form action="#">
+									<input type="text" placeholder="Write your comment...">
+									<label class="file-upload">
+										<i class="--ic-file-upload-icon"></i>
+										<input type="file" multiple>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<!-- Hot news post -->
+				<li class="post post--hot-news global-box">
+					<div class="post__header">
+						<h2 class="post__title">Hot news</h2>
+						<div class="action-dots__wrap">
+							<div class="action-dots action-dots--bordered">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="action-dots__popup action-dots__popup--post popup-triangle">
+								<div class="action-dots__popup-buttons">
+									<a href="#">Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="post__image post__image-large">
+						<amp-img layout="fill" src="img/posts/1.webp" alt="Post image"></amp-img>
+					</div>
+					<h2 class="post__title">
+						The workers keeping their
+					</h2>
+					<div class="post__header-person post__header-person--hot-news">
+						<a class="user__box post__header-user" href="#">
+							<div class="user__avatar">
+								<div class="user__avatar-img">
+									<amp-img src="img/users/3.webp" alt="User photo" layout="fill">
+									</amp-img>
+								</div>
+							</div>
+							<div class="user__name user__name--hot-news">
+								<span>Robert King</span>
+								<div class="time-box">
+									<span class="time-box__count time-box__count-dotted">2</span> hours
+									ago
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="post__text">
+						Lana Wood says that the Hollywood stars' meeting at the famed Chateau Marmont hotel
+						had
+						been arranged by her mother,
+						Maria Zakharenko, who hoped Mr Douglas could help open doors.
+					</div>
+					<div class="post__actions">
+						<div class="post__actions-top">
+							<div class="post__ratings">
+								<div class="post__ratings-likes">
+									<span class="likes-count">55</span>
+									<span>likes</span>
+								</div>
+								<div class="post__ratings-dislikes">
+									<span class="dislikes-count">15</span>
+									<span>dislikes</span>
+								</div>
+							</div>
+							<a class="post__actions-save post__actions-button" href="#">
+								<i class="--ic-save-icon"></i>
+							</a>
+						</div>
+						<div class="post__actions-bottom">
+							<div class="post__actions-buttons">
+								<div class="post__actions-like post__actions-button">
+									<i class="--ic-like-icon"></i>
+									Like It
+								</div>
+								<div class="post__actions-dislike post__actions-button">
+									<i class="--ic-dislike-icon"></i>
+									Dislike
+								</div>
+								<div class="post__actions-comment post__actions-button">
+									<i class="--ic-comment-icon"></i>
+									Comment
+								</div>
+							</div>
+							<div class="post__actions-right">
+								<a class="post__actions-share post__actions-button" href="#">
+									<i class="--ic-share-icon"></i>
+									Share
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="comment-input">
+						<div class="comment-input__inner">
+							<div class="user__box online-status is-online">
+								<div class="user__avatar">
+									<div class="user__avatar-img white-bg">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+							</div>
+							<div class="comment-input__form">
+								<form action="#">
+									<input type="text" placeholder="Write your comment...">
+									<label class="file-upload">
+										<i class="--ic-file-upload-icon"></i>
+										<input type="file" multiple>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<!-- Audio post -->
+				<li class="post global-box">
+					<div class="post__header">
+						<div class="post__header-person">
+							<a class="user__box post__header-user" href="#">
+								<div class="user__avatar">
+									<div class="user__avatar-img">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+								<div class="user__name">
+									<span>Robert King</span>
+									<div class="time-box">
+										<span class="time-box__count time-box__count-dotted">2</span> hours
+										ago
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="action-dots__wrap">
+							<div class="action-dots action-dots--bordered">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="action-dots__popup action-dots__popup--post popup-triangle">
+								<div class="action-dots__popup-buttons">
+									<a href="#">Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="post__title">
+						The workers keeping their
+					</h2>
+					<div class="post__audio">
+						<amp-audio width="auto" height="47"
+							src="https://ia801402.us.archive.org/16/items/EDIS-SRP-0197-06/EDIS-SRP-0197-06.mp3">
+							<div fallback>Your browser doesn’t support HTML5 audio</div>
+						</amp-audio>
+					</div>
+					<div class="post__text">
+						Lana Wood says that the Hollywood stars' meeting at the famed Chateau Marmont hotel
+						had
+						been arranged by her mother,
+						Maria Zakharenko, who hoped Mr Douglas could help open doors.
+					</div>
+					<div class="post__actions">
+						<div class="post__actions-top">
+							<div class="post__ratings">
+								<div class="post__ratings-likes">
+									<span class="likes-count">55</span>
+									<span>likes</span>
+								</div>
+								<div class="post__ratings-dislikes">
+									<span class="dislikes-count">15</span>
+									<span>dislikes</span>
+								</div>
+							</div>
+							<a class="post__actions-save post__actions-button" href="#">
+								<i class="--ic-save-icon"></i>
+							</a>
+						</div>
+						<div class="post__actions-bottom">
+							<div class="post__actions-buttons">
+								<div class="post__actions-like post__actions-button">
+									<i class="--ic-like-icon"></i>
+									Like It
+								</div>
+								<div class="post__actions-dislike post__actions-button">
+									<i class="--ic-dislike-icon"></i>
+									Dislike
+								</div>
+								<div class="post__actions-comment post__actions-button">
+									<i class="--ic-comment-icon"></i>
+									Comment
+								</div>
+							</div>
+							<div class="post__actions-right">
+								<a class="post__actions-share post__actions-button" href="#">
+									<i class="--ic-share-icon"></i>
+									Share
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="comment-input">
+						<div class="comment-input__inner">
+							<div class="user__box online-status is-online">
+								<div class="user__avatar">
+									<div class="user__avatar-img white-bg">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+							</div>
+							<div class="comment-input__form">
+								<form action="#">
+									<input type="text" placeholder="Write your comment...">
+									<label class="file-upload">
+										<i class="--ic-file-upload-icon"></i>
+										<input type="file" multiple>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<!-- Vote post -->
+				<li class="post global-box">
+					<div class="post__header">
+						<div class="post__header-person">
+							<a class="user__box post__header-user" href="#">
+								<div class="user__avatar">
+									<div class="user__avatar-img">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+								<div class="user__name">
+									<span>Robert King</span>
+									<div class="time-box">
+										<span class="time-box__count time-box__count-dotted">2</span> hours
+										ago
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="action-dots__wrap">
+							<div class="action-dots action-dots--bordered">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="action-dots__popup action-dots__popup--post popup-triangle">
+								<div class="action-dots__popup-buttons">
+									<a href="#">Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="post__title">
+						Lana Wood says that the Hollywood stars' meeting at the famed? <span>✌️</span>
+					</h2>
+					<div class="post__vote-content">
+						<form class="post__vote-form" action="#">
+							<label class="post__vote-label">
+								<input name="rd" class="post__vote-radio" type="radio">
+								<span class="post__vote-style"></span>
+								Question One
+							</label>
+							<label class="post__vote-label">
+								<input name="rd" class="post__vote-radio" type="radio">
+								<span class="post__vote-style"></span>
+								Question Two
+							</label>
+						</form>
+					</div>
+					<div class="post__text">
+						Lana Wood says that the Hollywood stars' meeting at the famed Chateau Marmont hotel
+						had
+						been arranged by her mother,
+						Maria Zakharenko, who hoped Mr Douglas could help open doors.
+					</div>
+					<div class="post__actions">
+						<div class="post__actions-top">
+							<div class="post__ratings">
+								<div class="post__ratings-likes">
+									<span class="likes-count">55</span>
+									<span>likes</span>
+								</div>
+								<div class="post__ratings-dislikes">
+									<span class="dislikes-count">15</span>
+									<span>dislikes</span>
+								</div>
+							</div>
+							<a class="post__actions-save post__actions-button" href="#">
+								<i class="--ic-save-icon"></i>
+							</a>
+						</div>
+						<div class="post__actions-bottom">
+							<div class="post__actions-buttons">
+								<div class="post__actions-like post__actions-button">
+									<i class="--ic-like-icon"></i>
+									Like It
+								</div>
+								<div class="post__actions-dislike post__actions-button">
+									<i class="--ic-dislike-icon"></i>
+									Dislike
+								</div>
+								<div class="post__actions-comment post__actions-button">
+									<i class="--ic-comment-icon"></i>
+									Comment
+								</div>
+							</div>
+							<div class="post__actions-right">
+								<a class="post__actions-share post__actions-button" href="#">
+									<i class="--ic-share-icon"></i>
+									Share
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="comment-input">
+						<div class="comment-input__inner">
+							<div class="user__box online-status is-online">
+								<div class="user__avatar">
+									<div class="user__avatar-img white-bg">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+							</div>
+							<div class="comment-input__form">
+								<form action="#">
+									<input type="text" placeholder="Write your comment...">
+									<label class="file-upload">
+										<i class="--ic-file-upload-icon"></i>
+										<input type="file" multiple>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<!-- Video post -->
+				<li class="post global-box">
+					<div class="post__header">
+						<div class="post__header-person">
+							<a class="user__box post__header-user" href="#">
+								<div class="user__avatar">
+									<div class="user__avatar-img">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+								<div class="user__name">
+									<span>Robert King</span>
+									<div class="time-box">
+										<span class="time-box__count time-box__count-dotted">2</span> hours
+										ago
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="action-dots__wrap">
+							<div class="action-dots action-dots--bordered">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="action-dots__popup action-dots__popup--post popup-triangle">
+								<div class="action-dots__popup-buttons">
+									<a href="#">Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="post__title">
+						The workers keeping their
+					</h2>
+					<div class="post__video">
+						<amp-video width="720" height="405"
+							src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+							poster="https://peach.blender.org/wp-content/uploads/bbb-splash.png" layout="responsive"
+							controls>
+							<div fallback>
+								<p>Your browser doesn't support HTML5 video.</p>
+							</div>
+						</amp-video>
+					</div>
+					<div class="post__text">
+						Lana Wood says that the Hollywood stars' meeting at the famed Chateau Marmont hotel
+						had
+						been arranged by her mother,
+						Maria Zakharenko, who hoped Mr Douglas could help open doors.
+					</div>
+					<div class="post__actions">
+						<div class="post__actions-top">
+							<div class="post__ratings">
+								<div class="post__ratings-likes">
+									<span class="likes-count">55</span>
+									<span>likes</span>
+								</div>
+								<div class="post__ratings-dislikes">
+									<span class="dislikes-count">15</span>
+									<span>dislikes</span>
+								</div>
+							</div>
+							<a class="post__actions-save post__actions-button" href="#">
+								<i class="--ic-save-icon"></i>
+							</a>
+						</div>
+						<div class="post__actions-bottom">
+							<div class="post__actions-buttons">
+								<div class="post__actions-like post__actions-button">
+									<i class="--ic-like-icon"></i>
+									Like It
+								</div>
+								<div class="post__actions-dislike post__actions-button">
+									<i class="--ic-dislike-icon"></i>
+									Dislike
+								</div>
+								<div class="post__actions-comment post__actions-button">
+									<i class="--ic-comment-icon"></i>
+									Comment
+								</div>
+							</div>
+							<div class="post__actions-right">
+								<a class="post__actions-share post__actions-button" href="#">
+									<i class="--ic-share-icon"></i>
+									Share
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="comment-input">
+						<div class="comment-input__inner">
+							<div class="user__box online-status is-online">
+								<div class="user__avatar">
+									<div class="user__avatar-img white-bg">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+							</div>
+							<div class="comment-input__form">
+								<form action="#">
+									<input type="text" placeholder="Write your comment...">
+									<label class="file-upload">
+										<i class="--ic-file-upload-icon"></i>
+										<input type="file" multiple>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<!-- Big picture post -->
+				<li class="post global-box">
+					<div class="post__header">
+						<div class="post__header-person">
+							<a class="user__box post__header-user" href="#">
+								<div class="user__avatar">
+									<div class="user__avatar-img">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+								<div class="user__name">
+									<span>Robert King</span>
+									<div class="time-box">
+										<span class="time-box__count time-box__count-dotted">2</span> hours
+										ago
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="action-dots__wrap">
+							<div class="action-dots action-dots--bordered">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="action-dots__popup action-dots__popup--post popup-triangle">
+								<div class="action-dots__popup-buttons">
+									<a href="#">Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="post__title">
+						The workers keeping their
+					</h2>
+					<div class="post__image post__image-large">
+						<amp-img layout="fill" src="img/posts/1.webp" alt="Post image"></amp-img>
+					</div>
+					<div class="post__text">
+						Lana Wood says that the Hollywood stars' meeting at the famed Chateau Marmont hotel
+						had
+						been arranged by her mother,
+						Maria Zakharenko, who hoped Mr Douglas could help open doors.
+					</div>
+					<div class="post__actions">
+						<div class="post__actions-top">
+							<div class="post__ratings">
+								<div class="post__ratings-likes">
+									<span class="likes-count">55</span>
+									<span>likes</span>
+								</div>
+								<div class="post__ratings-dislikes">
+									<span class="dislikes-count">15</span>
+									<span>dislikes</span>
+								</div>
+							</div>
+							<a class="post__actions-save post__actions-button" href="#">
+								<i class="--ic-save-icon"></i>
+							</a>
+						</div>
+						<div class="post__actions-bottom">
+							<div class="post__actions-buttons">
+								<div class="post__actions-like post__actions-button">
+									<i class="--ic-like-icon"></i>
+									Like It
+								</div>
+								<div class="post__actions-dislike post__actions-button">
+									<i class="--ic-dislike-icon"></i>
+									Dislike
+								</div>
+								<div class="post__actions-comment post__actions-button">
+									<i class="--ic-comment-icon"></i>
+									Comment
+								</div>
+							</div>
+							<div class="post__actions-right">
+								<a class="post__actions-share post__actions-button" href="#">
+									<i class="--ic-share-icon"></i>
+									Share
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="comments">
+						<ul class="comments__list">
+
+							<!-- First line comment -->
+							<li class="comments__item first-line-comment">
+								<div class="comments__comment-wrap">
+									<div class="comments__avatar">
+										<img src="img/users/7.webp" alt="User photo">
+									</div>
+									<div class="comments__item-inner">
+										<div class="comments__content">
+											<div class="comments__content-top">
+												<a class="comments__name" href="#">
+													Adam Smith
+												</a>
+												<div class="comments__time">
+													1 Hour Ago
+												</div>
+												<div class="action-dots__wrap">
+													<div class="action-dots">
+														<span></span>
+														<span></span>
+														<span></span>
+													</div>
+													<div
+														class="action-dots__popup action-dots__popup--comment popup-triangle">
+														<div class="action-dots__popup-buttons">
+															<a href="#">Report</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="comments__text">
+												Lana Wood says that the Hollywood stars' meeting at the
+												famed
+											</div>
+											<div class="comments__reactions">
+												<span class="comments__reactions-like">Like</span>
+												<span class="comments__reactions-reply">Reply</span>
+											</div>
+
+										</div>
+										<div class="comments__show-replies">
+											<i class="--ic-replies-icon"></i>
+											<span>
+												5 Comments
+											</span>
+										</div>
+									</div>
+								</div>
+							</li><!-- First line comment -->
+
+							<!-- First line comment -->
+							<li class="comments__item first-line-comment">
+								<div class="comments__comment-wrap is-commented">
+									<div class="comments__avatar">
+										<img src="img/users/8.webp" alt="User photo">
+									</div>
+									<div class="comments__item-inner">
+										<div class="comments__content">
+											<div class="comments__content-top">
+												<a class="comments__name" href="#">
+													Adam Smith
+												</a>
+												<div class="comments__time">
+													1 Hour Ago
+												</div>
+												<div class="action-dots__wrap">
+													<div class="action-dots">
+														<span></span>
+														<span></span>
+														<span></span>
+													</div>
+													<div
+														class="action-dots__popup action-dots__popup--comment popup-triangle">
+														<div class="action-dots__popup-buttons">
+															<a href="#">Report</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="comments__text">
+												Nulla vel metus scelerisque ante sollicitudin. Cras purus
+												odio,
+												vestibulum in vulputate at, tempus viverra turpis. Duis
+												sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue
+												semper
+												porta. Mauris massa.
+												Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+												Delectus id quos provident esse officiis ratione odio.
+												Corrupti
+												provident modi molestiae in accusantium possimus sunt eius
+												magnam, dolore optio incidunt non.
+												Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+												Corrupti sint illo excepturi a perferendis amet error?
+												Maiores
+												quae incidunt, modi nulla ipsum dolores suscipit,
+												voluptatibus
+												repellendus iure sed commodi aliquam.
+											</div>
+											<div class="comments__reactions">
+												<span class="comments__reactions-likes">
+													5
+												</span>
+												<span class="comments__reactions-like is-liked">
+													Like
+												</span>
+												<span class="comments__reactions-reply">
+													Reply
+												</span>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<ul class="comments__replies first-line">
+
+									<!-- Second line comment -->
+									<li class="comments__item second-line-comment comments__replies-item">
+										<div class="comments__comment-wrap">
+											<div class="comments__avatar">
+												<img src="img/users/5.webp" alt="User photo">
+											</div>
+											<div class="comments__item-inner">
+												<div class="comments__content">
+													<div class="comments__content-top">
+														<a class="comments__name" href="#">
+															Adam Smith
+														</a>
+														<div class="comments__time">
+															1 Hour Ago
+														</div>
+														<div class="action-dots__wrap">
+															<div class="action-dots">
+																<span></span>
+																<span></span>
+																<span></span>
+															</div>
+															<div
+																class="action-dots__popup action-dots__popup--comment popup-triangle">
+																<div class="action-dots__popup-buttons">
+																	<a href="#">Report</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="comments__text">
+														Lana Wood says that the Hollywood stars' meeting at
+														the
+														famed
+														Lorem ipsum dolor sit amet consectetur, adipisicing
+														elit. Dolores, quod magnam ipsam expedita
+														exercitationem
+														temporibus obcaecati consequatur quos culpa adipisci
+													</div>
+													<div class="comments__reactions">
+														<span class="comments__reactions-like">Like</span>
+														<span class="comments__reactions-reply">Reply</span>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</li><!-- Second line comment -->
+
+									<!-- Second line comment -->
+									<li class="comments__item second-line-comment comments__replies-item">
+										<div class="comments__comment-wrap is-commented">
+											<div class="comments__avatar">
+												<img src="img/users/6.webp" alt="User photo">
+											</div>
+											<div class="comments__item-inner">
+												<div class="comments__content">
+													<div class="comments__content-top">
+														<a class="comments__name" href="#">
+															Adam Smith
+														</a>
+														<div class="comments__time">
+															1 Hour Ago
+														</div>
+														<div class="action-dots__wrap">
+															<div class="action-dots">
+																<span></span>
+																<span></span>
+																<span></span>
+															</div>
+															<div
+																class="action-dots__popup action-dots__popup--comment popup-triangle">
+																<div class="action-dots__popup-buttons">
+																	<a href="#">Report</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="comments__text">
+														Lana Wood says that the Hollywood stars' meeting at
+														the
+														famed
+														Lorem ipsum dolor sit amet consectetur, adipisicing
+														elit. Dolores, quod magnam ipsam expedita
+														exercitationem
+														qui
+														odio in officiis earum, a, omnis laborum molestiae
+														eos
+														ipsa distinctio totam nihil magnam pariatur. Est
+														nobis
+														mollitia praesentium laudantium?
+													</div>
+													<div class="comments__reactions">
+														<span class="comments__reactions-like">Like</span>
+														<span class="comments__reactions-reply">Reply</span>
+													</div>
+
+												</div>
+											</div>
+										</div>
+										<ul class="comments__replies">
+
+											<!-- Third line comment -->
+											<li class="comments__item third-line-comment comments__replies-item">
+												<div class="comments__comment-wrap">
+													<div class="comments__avatar">
+														<img src="img/users/2.webp" alt="User photo">
+													</div>
+													<div class="comments__item-inner">
+														<div class="comments__content">
+															<div class="comments__content-top">
+																<a class="comments__name" href="#">
+																	Adam Smith
+																</a>
+																<div class="comments__time">
+																	1 Hour Ago
+																</div>
+																<div class="action-dots__wrap">
+																	<div class="action-dots">
+																		<span></span>
+																		<span></span>
+																		<span></span>
+																	</div>
+																	<div
+																		class="action-dots__popup action-dots__popup--comment popup-triangle">
+																		<div class="action-dots__popup-buttons">
+																			<a href="#">Report</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="comments__text">
+																Lana Wood says that the Hollywood stars'
+																meeting
+																at the
+																famed
+																Lorem ipsum dolor sit amet consectetur,
+																adipisicing
+																elit. Dolores, quod magnam ipsam expedita
+																exercitationem
+																temporibus obcaecati consequatur quos culpa
+																adipisci
+															</div>
+															<div class="comments__reactions">
+																<span class="comments__reactions-like">Like</span>
+																<span class="comments__reactions-reply">Reply</span>
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</li><!-- Third line comment -->
+											<!-- Third line comment -->
+											<li class="comments__item third-line-comment comments__replies-item">
+												<div class="comments__comment-wrap">
+													<div class="comments__avatar">
+														<img src="img/users/1.webp" alt="User photo">
+													</div>
+													<div class="comments__item-inner">
+														<div class="comments__content">
+															<div class="comments__content-top">
+																<a class="comments__name" href="#">
+																	Adam Smith
+																</a>
+																<div class="comments__time">
+																	1 Hour Ago
+																</div>
+																<div class="action-dots__wrap">
+																	<div class="action-dots">
+																		<span></span>
+																		<span></span>
+																		<span></span>
+																	</div>
+																	<div
+																		class="action-dots__popup action-dots__popup--comment popup-triangle">
+																		<div class="action-dots__popup-buttons">
+																			<a href="#">Report</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="comments__text">
+																Lana Wood says that the Hollywood stars'
+																meeting
+																at the
+																famed
+															</div>
+															<div class="comments__reactions">
+																<span class="comments__reactions-like">Like</span>
+																<span class="comments__reactions-reply">Reply</span>
+															</div>
+															<div class="comment-input">
+																<div class="comment-input__inner">
+																	<div class="user__box online-status is-online">
+																		<div class="user__avatar">
+																			<div class="user__avatar-img white-bg">
+																				<amp-img src="img/users/main-user.webp"
+																					alt="User photo" layout="fill"
+																					class="i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout"
+																					i-amphtml-layout="fill">
+																					<img decoding="async"
+																						alt="User photo"
+																						src="img/users/main-user.webp"
+																						class="i-amphtml-fill-content i-amphtml-replaced-content">
+																				</amp-img>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="comment-input__form">
+																		<form action="#" novalidate=""
+																			class="i-amphtml-form">
+																			<input type="text"
+																				placeholder="Write your comment...">
+																			<label class="file-upload">
+																				<i class="--ic-file-upload-icon"></i>
+																				<input type="file" multiple="">
+																			</label>
+																		</form>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li><!-- Third line comment -->
+										</ul>
+									</li><!-- Second line comment -->
+								</ul>
+							</li><!-- First line comment -->
+
+							<!-- First line comment -->
+							<li class="comments__item first-line-comment">
+								<div class="comments__comment-wrap personal-comment">
+									<div class="comments__avatar">
+										<img src="img/users/2.webp" alt="User photo">
+									</div>
+									<div class="comments__item-inner">
+										<div class="comments__content">
+											<div class="comments__content-top">
+												<a class="comments__name" href="#">
+													Roman Polyarysh
+												</a>
+												<div class="comments__time">
+													1 Hour Ago
+												</div>
+												<div class="action-dots__wrap">
+													<div class="action-dots">
+														<span></span>
+														<span></span>
+														<span></span>
+													</div>
+													<div class="action-dots__popup popup-triangle">
+														<div class="action-dots__popup-buttons">
+															<a href="#"><i class="--ic-edit-icon"></i>Edit comment</a>
+															<a href="#"><i class="--ic-delete-icon"></i>Delete
+																comment</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="comments__text">
+												Lana Wood says that the Hollywood stars' meeting at the
+												famed
+											</div>
+											<div class="comments__reactions">
+												<span class="comments__reactions-like">Like</span>
+												<span class="comments__reactions-reply">Reply</span>
+											</div>
+
+										</div>
+										<div class="comments__show-replies">
+											<i class="--ic-replies-icon"></i>
+											<span>
+												5 Comments
+											</span>
+										</div>
+									</div>
+								</div>
+							</li><!-- First line comment -->
+
+						</ul>
+					</div>
+					<div class="comment-input">
+						<div class="comment-input__inner">
+							<div class="user__box online-status is-online">
+								<div class="user__avatar">
+									<div class="user__avatar-img white-bg">
+										<amp-img src="img/users/main-user.webp" alt="User photo" layout="fill">
+										</amp-img>
+									</div>
+								</div>
+							</div>
+							<div class="comment-input__form">
+								<form action="#">
+									<input type="text" placeholder="Write your comment...">
+									<label class="file-upload">
+										<i class="--ic-file-upload-icon"></i>
+										<input type="file" multiple>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</main>
+
+	</div><!-- .site-wrap -->
+
+	<!-- To top button -->
+<button class="to-top" on="tap:top-page.scrollTo(duration=500)"></button>
+<!-- Main Menu -->
+<nav class="main-menu global-popup">
+	<div class="main-menu-inner global-popup__inner">
+
+		<!-- Main menu user -->
+		<div class="main-menu__user global-box">
+
+			<!-- User box -->
+			<div class="user__box">
+				<div class="avatar avatar--md">
+					<amp-img layout="fill" src="img/users/main-user.webp" alt="User avatar"></amp-img>
+				</div>
+				<div class="user__name">
+					Roman Polyarysh
+					<span class="user__nickname">
+						@polyarush
+					</span>
+				</div>
+			</div>
+
+			<!-- User actions -->
+			<div class="main-menu__user-actions">
+
+				<div class="action-dots__wrap">
+					<div class="action-dots">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="action-dots__popup popup-triangle">
+						<div class="action-dots__popup-buttons">
+							<a href="#">Action</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="main-menu__user-settings">
+					<a href="settings.html">
+						<i class="--ic-settings-icon"></i>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Main menu list -->
+		<div class="main-menu__list global-box">
+			<ul>
+				<li>
+					<a href="#">Actu Senegal</a>
+				</li>
+				<li>
+					<a href="#">Actu CEDEAO</a>
+					<div class="notification-count">
+						7
+					</div>
+				</li>
+				<li>
+					<a href="#">Actu Afrique</a>
+				</li>
+				<li>
+					<a href="#">Actu Maghreb</a>
+				</li>
+				<li>
+					<a href="#">Actu France</a>
+				</li>
+				<li>
+					<a href="#">Actu Etata Unis</a>
+				</li>
+				<li>
+					<a href="#">Actu Chine</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Liked pages -->
+		<div class="main-menu__pages-liked global-box">
+			<h3 class="box-title">Pages You Like</h3>
+			<ul class="liked-pages">
+				<li>
+					<a href="#">
+						<div class="liked-pages__page-image">
+							<amp-img layout="fill" src="img/liked-pages/1.webp" alt="Liverpool FC"></amp-img>
+						</div>
+						<div class="liked-pages__page-name">Liverpool FC</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="liked-pages__page-image">
+							<amp-img layout="fill" src="img/liked-pages/2.webp" alt="Liverpool FC"></amp-img>
+						</div>
+						<div class="liked-pages__page-name">UI&amp;UX Design</div>
+						<div class="notification-count">5</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="liked-pages__page-image">
+							<amp-img layout="fill" src="img/liked-pages/3.webp" alt="Liverpool FC"></amp-img>
+						</div>
+						<div class="liked-pages__page-name">Reartburo</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Events -->
+		<div class="events global-box">
+			<div class="events__top global-box__top">
+				<h3 class="box-title">Events</h3>
+			</div>
+			<div class="events__content is-empty">
+				<div class="events__content-plug">
+					<div class="events__content-img">
+						<amp-img layout="fill" src="img/icons/events-icon.svg" alt="Event icon"></amp-img>
+					</div>
+					<a href="#">
+						The list is empty, <span>find an event</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</nav>
+<!-- Main notifications -->
+<div class="main-notifications global-popup">
+	<div class="main-notifications__inner global-popup__inner">
+		<div class="global-box">
+			<h3 class="box-title">
+				Notifications
+			</h3>
+			<ul class="main-notifications__list ">
+				<li>
+					<a href="#">
+						<div class="avatar avatar--md">
+							<amp-img src="img/users/main-user.webp" alt="User avatar" layout="fill"></amp-img>
+						</div>
+						<div class="main-notifications__info">
+							<div class="main-notifications__username">
+								Robert King
+							</div>
+							<p class="main-notifications__text">
+								Lana Wood says that the Hollywood stars' meeting at the
+								Lana Wood says that the Hollywood stars' meeting at the
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="avatar avatar--md">
+							<amp-img src="img/users/1.webp" alt="User avatar" layout="fill"></amp-img>
+						</div>
+						<div class="main-notifications__info">
+							<div class="main-notifications__username">
+								Amanda Dowson
+							</div>
+							<p class="main-notifications__text">
+								Lana Wood says that the Hollywood stars' meeting at the
+								Lana Wood says that the Hollywood stars' meeting at the
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="avatar avatar--md">
+							<amp-img src="img/users/main-user.webp" alt="User avatar" layout="fill"></amp-img>
+						</div>
+						<div class="main-notifications__info">
+							<div class="main-notifications__username">
+								Robert King
+							</div>
+							<p class="main-notifications__text">
+								Lana Wood says that the Hollywood stars' meeting at the
+								Lana Wood says that the Hollywood stars' meeting at the
+							</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Main messages -->
+<div class="main-messages global-popup">
+	<div class="main-messages__inner global-popup__inner">
+		<div class="global-box">
+			<div class="main-messages__top">
+				<h3 class="box-title">Messages</h3>
+				<a href="#">
+					<i class="--ic-new-post-icon"></i>
+				</a>
+			</div>
+			<ul class="main-messages__list">
+				<li>
+					<a class="user__box online-status is-offline" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/3.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Amanda Dowson
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-online" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/1.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Robert King
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-count">7</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-offline" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/3.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Amanda Dowson
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-offline" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/1.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Pedro Gonçalves
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-online" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/2.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Amanda Dowson
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+				<li>
+					<a class="user__box online-status is-online" href="#">
+						<div class="user__avatar">
+							<div class="user__avatar-img white-bg">
+								<amp-img src="img/users/4.webp" alt="User photo" layout="fill"></amp-img>
+							</div>
+						</div>
+						<div class="main-messages__user-info">
+							<div class="user__name">
+								Marcin Dobrozek
+							</div>
+							<p>
+								Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s.
+							</p>
+						</div>
+						<div class="notification-date">21.05.21</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Header Search -->
+<div class="header-search-wrap">
+	<button class="search-button--close" on="tap:AMP.setState({ search_class: '' })"></button>
+	<div class="header-search-inner">
+		<form action-xhr="//" id="search_form" method="post">
+			<input type="text" name="s" placeholder="Search" />
+			<input type="submit" value="" />
+		</form>
+	</div>
+	<div class="header-search-overlay"></div>
+</div>
+
+<div class="all-overlay"></div>
+</body>
+
+</html>
