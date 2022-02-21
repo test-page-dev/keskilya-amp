@@ -108,19 +108,20 @@
 		</div>
 
 		<!-- Main search -->
-		<div class="header-action header-action--search" on="tap:AMP.setState({ search_class: 'search--is-shown' })">
+		<div tabindex="1" role="button" class="header-action header-action--search"
+			on="tap:AMP.setState({ search_class: 'search--is-shown' })">
 			<i class="--ic-users-search-icon"></i>
 		</div>
 
 		<!-- Main notifications -->
-		<div class="header-action header-action--notification "
+		<div tabindex="1" role="button" class="header-action header-action--notification "
 			on="tap:AMP.setState({ notifications_class: notifications_class ? '' : 'notifications--is-shown', menu_class: '', messages_class: '' })">
 			<i class="--ic-notifications-icon"></i>
 			<div class="header__notifications-counter">2</div>
 		</div>
 
 		<!-- Main messages -->
-		<div class="header-action header-action--message"
+		<div tabindex="1" role="button" class="header-action header-action--message"
 			on="tap:AMP.setState({ messages_class: messages_class ? '' : 'messages--is-shown', menu_class: '', notifications_class: '' })">
 			<i class="--ic-message-user-icon"></i>
 		</div>
@@ -353,7 +354,7 @@
 										</div>
 									</div>
 									<div class="comment-input__form">
-										<form action="#">
+										<form target="#" action="#">
 											<input type="text" placeholder="Write your comment...">
 										</form>
 									</div>
@@ -467,7 +468,7 @@
 										</div>
 									</div>
 									<div class="comment-input__form">
-										<form action="#">
+										<form target="#" action="#">
 											<input type="text" placeholder="Write your comment...">
 										</form>
 									</div>
